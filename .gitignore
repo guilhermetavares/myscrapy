@@ -14,6 +14,7 @@ develop-eggs/
 dist/
 downloads/
 eggs/
+my/
 .eggs/
 lib/
 lib64/
@@ -23,6 +24,8 @@ var/
 *.egg-info/
 .installed.cfg
 *.egg
+
+.DS_Store
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
@@ -42,12 +45,14 @@ htmlcov/
 .cache
 nosetests.xml
 coverage.xml
-*,cover
+*.cover
 .hypothesis/
 
 # Translations
 *.mo
 *.pot
+
+*.DS_Store
 
 # Django stuff:
 *.log
