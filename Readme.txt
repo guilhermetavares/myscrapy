@@ -7,7 +7,7 @@ First, clone the project: ::
 
 
 Install the requirements, on enviroment with ``Python >= 3.4.3``: ::
-
+    
     pip install requirements.txt
 
 
@@ -16,7 +16,7 @@ To run the tests, cd ``/faragov/faragov/``: ::
     python3 tests.py
 
 The response, running with coverage: ::
-
+    
     Name                          Stmts   Miss Branch BrPart  Cover
 	---------------------------------------------------------------
 	faragov/__init__.py               0      0      0      0   100%
