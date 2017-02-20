@@ -76,12 +76,12 @@ class FaraSpider(scrapy.Spider):
                 item[key] = value
             if item['url']:
                 request = scrapy.Request(item['url'] ,callback=self.parse_exhibit_url)
-                request.meta['my_meta_item'] = item
+                request.meta['item'] = item
                 return request
             return item
 
     def parse_exhibit_url(self, response):
-        item = response.meta['my_meta_item']
+        item = response.meta['item']
 
         for td_data in response.css('table.t7GCCReportsStyle2 td'):
             headers = td_data.xpath('@headers').extract_first()
